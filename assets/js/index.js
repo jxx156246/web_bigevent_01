@@ -46,7 +46,7 @@ function renderAvatar(user) {
     //1.获取用户名
     var name = user.nickname || user.username;
     //2.渲染文字
-    $("#welcome").html('欢迎&nbsp;&nbsp' + name);
+    $("#welcome").html('欢迎&nbsp;&nbsp;' + name);
     //3.渲染头像
     var first = name[0].toUpperCase()
     if (user.user_pic !== null) {

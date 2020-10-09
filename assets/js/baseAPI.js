@@ -21,7 +21,7 @@ $.ajaxPrefilter(function(options) {
     //3.拦截所有响应，判断身份认证信息
     //无论成功或失败，都要调用这个回调函数
     options.complete = function(res) {
-        console.log(res);
+        // console.log(res);
         if (res.responseJSON.status == 1 && res.responseJSON.message == "身份认证失败！") {
             localStorage.removeItem('token');
             location.href = '/login.html'
